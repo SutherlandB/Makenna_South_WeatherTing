@@ -10,6 +10,7 @@ h1
     font-size: 70px;
     color: white;
 }
+
 #weather-and-platform-div
 {
     margin: auto;
@@ -25,10 +26,11 @@ h1
     width: 643px;
     height: 270px;
     float:left;
+    font-size: 23px;
 }
 #dance_platform
 {
-    float: left; 
+    float: left;
     margin: 70px;
     padding-top: 145px;
 }
