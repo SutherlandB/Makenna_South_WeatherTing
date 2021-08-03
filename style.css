@@ -14,8 +14,6 @@ h1
 #weather-and-platform-div
 {
     margin: auto;
-    width:  60%%;
-    padding-left: 10%;
 }
 
 #weather-container
@@ -31,6 +29,6 @@ h1
 #dance_platform
 {
     float: left;
-    margin: 70px;
-    padding-top: 145px;
+    margin: 30px;
+    padding-top: 190px;
 }
