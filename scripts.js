@@ -14,12 +14,19 @@ function successCallback(pos){
 function displayData(data)//this function takes in the data
 {
   //Shows information for today
-  document.getElementById("forecast-1-heading").innerHTML = data.forecast.forecastday[0].date;//goes specifically to the temperature value and displays it where forecast-1 is the id
+  let currDate = data.forecast.forecastday[0].date;//gets the current date 
+  let currDate2 = new Date(currDate.slice(0,4), parseInt(currDate.slice(5,7))-1, currDate.slice(8,10)); //takes the date and converts it into a date object
+  const weekArr = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] //array of days
+  document.getElementById("forecast-1-heading").innerHTML = weekArr[currDate2.getDay()] + " " + currDate.slice(8,10);//Gets the day from the date objet and usses the array to display the string name of that day                             goes specifically to the temperature value and displays it where forecast-1 is the id
   document.getElementById("forecast-1").innerHTML = data.current.temp_f;//goes specifically to the temperature value and displays it where forecast-1 is the id
   //Shows information for next 2 days
-  document.getElementById("forecast-2-heading").innerHTML = data.forecast.forecastday[1].date;
+  let secondDate = data.forecast.forecastday[1].date;
+  let secondDate2 = new Date(secondDate.slice(0,4), parseInt(secondDate.slice(5,7))-1, secondDate.slice(8,10)); //takes the date and converts it into a date object
+  document.getElementById("forecast-2-heading").innerHTML = weekArr[secondDate2.getDay()] + " " + secondDate.slice(8,10);
   document.getElementById("forecast-2").innerHTML = data.forecast.forecastday[1].day.avgtemp_f;
-  document.getElementById("forecast-3-heading").innerHTML = data.forecast.forecastday[2].date;
+  let thirdDate = data.forecast.forecastday[2].date;
+  let thirdDate2 = new Date(thirdDate.slice(0,4), parseInt(thirdDate.slice(5,7))-1, thirdDate.slice(8,10));
+  document.getElementById("forecast-3-heading").innerHTML = weekArr[thirdDate2.getDay()] + " " + thirdDate.slice(8,10); 
   document.getElementById("forecast-3").innerHTML = data.forecast.forecastday[2].day.avgtemp_f;
 }
 const errorCallback = (error) => {
