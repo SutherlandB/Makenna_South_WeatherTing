@@ -14,7 +14,7 @@ h1
 #weather-and-platform-div
 {
     margin: auto;
-    padding-left: 40px;
+    padding-left: 12%;
 }
 
 #weather-container
@@ -24,8 +24,16 @@ h1
     border-radius: 20px;
     width: 643px;
     height: 270px;
-    float:left;
+    float: left;
     font-size: 23px;
+    font-family: 'Numans', sans-serif;
+}
+#temperature-container
+{
+  width:33.3%;
+  float: left;
+  text-align: center;
+
 }
 #dance_platform
 {
@@ -34,29 +42,29 @@ h1
     padding-top: 190px;
 }
 #forecast-1-heading{
-    font: Numans; 
+    font: Numans;
     font-size:  20px;
 }
 #forecast-1{
-    font: Numans; 
+    font: Numans;
     font-size: 20ox;
 
 
 }
 #forecast-2-heading{
-    font: Numans; 
+    font: Numans;
     font-size: 20px;
 }
 #forecast-2{
-    font: Numans; 
+    font: Numans;
     font-size: 20px;
 }
 #forecast-3-heading{
-    font: Numans; 
+    font: Numans;
     font-size: 20px;
 
 }#forecast-3{
-    font: Numans; 
+    font: Numans;
     font-size: 20px;
 
 }
