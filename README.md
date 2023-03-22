@@ -1,2 +1,2 @@
-# Makenna_South_WeatherTing
+# Weather API App
 Weather Project
